@@ -22,3 +22,11 @@ freq = sorted(freq.items(), key=lambda item: item[1],reverse=True)
 # Return top 50 keywords
 print(freq[:50],sep="\n")
 
+
+
+#Use TextRank model to get keywords
+
+tr=textranker.TextRank4Keyword()
+tweetString = ' '.join(tweets)
+tr.analyze(tweetString, candidate_pos = ['NOUN', 'PROPN'], window_size=4, lower=False)
+tr.get_keywords(50)
