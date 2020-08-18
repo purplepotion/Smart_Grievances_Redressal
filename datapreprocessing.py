@@ -49,9 +49,12 @@ def get_tweet_sentiment(tweet):
 # loading training and test data
 
 train  = pd.read_csv('Dataset/finalDate.csv',encoding="ISO-8859-1")
+# Drop unnamed columns
 train.drop(train.columns[train.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
 train.replace('', np.nan, inplace=True)
 train.dropna(inplace=True)
+# Remove non-utf characters
+train['tweet']=train['tweet'].apply(lambda x: ''.join(["" if  i not in  string.printable else i for i in x]))
 
 #combining training and and test data for preprocessing 
 total_data = train
