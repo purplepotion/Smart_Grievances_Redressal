@@ -5,12 +5,12 @@ import importlib
 
 preprocessor.preprocess()
 
-tweets=(preprocessor.getTrainSet())['tidy_tweet']
 
 # Generate frequency map of keywords in tweets
+tweets=(preprocessor.getTrainSet())['tidy_tweet']
 freq={}
 for tweet in tweets:
-    keywords=tweet.split()
+    keywords=tweet
     for keyword in keywords:
         if(keyword in freq):
             freq[keyword]+=1
@@ -25,7 +25,7 @@ print(freq[:50],sep="\n")
 
 
 #Use TextRank model to get keywords
-
+tweets=(preprocessor.getTrainSet())['basic_clean_tweet']
 tr=textranker.TextRank4Keyword()
 tweetString = ' '.join(tweets)
 tr.analyze(tweetString, candidate_pos = ['NOUN', 'PROPN'], window_size=4, lower=False)
