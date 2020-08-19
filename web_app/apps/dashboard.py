@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output, State
 import plotly.express as px
 import pandas as pd
 
-from web_app.app import app
+from app import app
 
 layout = html.Div([
     html.Div([
