@@ -19,10 +19,17 @@ layout = html.Div([
             ], className="col"),
 
             html.Div([
-                dcc.Dropdown(
-                    options=dropdownOptions,
-                    # id="dashboard_title",
-                ),
+                html.Div([
+                    dcc.Dropdown(
+                        options=dropdownOptions,
+                        id="selectDepartment",
+                        style={
+                            'width': '100%',
+                        }
+                    ),
+                ],
+                    className="container deptDropdown",
+                )
             ], className="col")
         ], className="row"),
 
