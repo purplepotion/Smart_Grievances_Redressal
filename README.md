@@ -3,7 +3,6 @@
 ## Introduction
 `Smart_Grievances_Redressal` is a dashboard made by `Team Scooptroop` for monitoring people complaints against posted in various social media handles, like twitter as well as the grievances portal. . 
 
-
 ## Built With
 * [Dash](https://dash.plot.ly/) - Main server and interactive components 
 * [Plotly Python](https://plot.ly/python/) - Used to create the interactive plots
@@ -18,6 +17,11 @@
 * Code-mixed laguage could also be used - [Translator](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/web_app/apps/helpers/language_translation.py)
 * [Extensive database](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/web_app/apps/helpers/complaint_data.db)
 * [Word embeddings](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/multi-class-text-classification-cnn/data_helper.py) to deal with extra noisy data
+
+## ScreenShots
+![ScreenShot 1](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(40).png)
+
+![ScreenShot 2](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(39).png)
 ## Requirements
 We suggest you to create a separate virtual environment running Python 3 for this app, and install all of the required dependencies there. Run in Terminal/Command Prompt:
 
@@ -67,6 +71,5 @@ Key words are displayed according to the department and the frequency graph of t
 ## Resources and references
 * [Smart complaints dispatching](https://arxiv.org/pdf/1912.10546v1.pdf)
 
-![ScreenShot 1](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(40).png)
 
-![ScreenShot 2](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(39).png)
+
