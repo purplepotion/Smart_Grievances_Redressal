@@ -21,19 +21,107 @@ DASHBOARD
 .divDisplay {
     margin: 20px;
     background-color: #263238;
-    color: aliceblue;
-    height: 400px;
+    color: #ffffff;
+    height: 480px;
     border-radius: 10px;
-    border: 1px;
-    border-color: #ffffff;
+    /* border: 1px; */
+    /* border-color: #ffffff; */
+    border: solid #707070 2px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Complaint Box */
+.divInput {
+    height: 80%;
+}
+
+#complaintText {
+    border: 0;
+    border-radius: 10px;
+    background-color: #000a12;
+    color: #ffffff;
+    width: 100%;
+    height: 350px;
+    font-family: "Roboto";
+    font-size: 16pt;
+    padding: 25px;
+}
+
+#btnSubmitComplaint {
+    margin-top: 20px;
+    background-color: #bb86fc;
+    border: none;
+    color: #000000;
+    border-radius: 20px;
+    font-family: "Roboto";
+    /* font-size: 14pt; */
+    padding: 3px 30px;
+}
+
+#btnSubmitComplaint:hover {
+    background-color: #9e6bdd;
+}
+
+/* Department Predictions */
+#predictionTitle {
+    color: #bb86fc;
+    text-transform: uppercase;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+}
+
+#predictionDept {
+    background-color: #000a12;
+    width: 60%;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#precdictionDeptText {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    font-size: 28pt;
+    color: #ffffff;
+}
+
+/* Keywords */
+#keywordsTitle {
+    color: #bb86fc;
+    text-transform: uppercase;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+}
+
+.keywordText {
+    text-align: center;
+    margin: 0;
+    display: block;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+#keywordsDiv {
+    /* align-items: center; */
+    background-color: #000a12;
+    width: 60%;
+    height: 240px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Next Page Button */
 #btnPageChange {
     background-color: #bb86fc;
     border: 0;
+    margin: 20px;
+    font-family: "Roboto";
+    font-size: 12pt;
 }
 #btnPageChange a {
     text-decoration: none;
@@ -45,72 +133,9 @@ DASHBOARD
     background-color: #9e6bdd;
 }
 
-.divDescription {
-    display: inline;
-    text-align: center;
-    align-items: center;
-}
-
-.divImages {
-    margin: 30px;
-    background-color: #28283c;
-    color: aliceblue;
-    height: 400px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
 .divGraphs {
     padding: 15px;
     height: 480px;
-}
-
-.divInputs {
-    display: flex;
-    flex-direction: column;
-    /* flex-shrink: 0; */
-    justify-content: center;
-    align-items: left;
-    padding: 30px;
-    margin: 20px;
-    min-height: auto;
-}
-
-.row.inpUser {
-    background-color: #1e1e2a;
-    border-radius: 5px;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 10pt;
-    color: #ffffff;
-    min-height: 38px;
-    margin: 0;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.buildingImg {
-    /* max-width: 100%; */
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    border-radius: 5px;
-}
-
-.imgTitle {
-    font-family: "Josefin Sans";
-    font-weight: 500;
-    color: #ed6663;
-}
-
-.imgDesc {
-    font-family: "Josefin Sans";
-    color: #318fb5;
-    font-size: 14pt;
-    margin-top: 10px;
 }
 
 /*************************************************************************
@@ -121,55 +146,36 @@ ANALYTICS
     width: 50%;
 }
 
-#divBuildingColor {
-    display: flex;
+.keywordBtn {
+    display: block;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #bb86fc;
+    color: #000000;
     width: 100%;
+    font-family: "Josefin Sans";
+    font-size: 14pt;
+    padding: 5px 30px;
 }
 
-#divColor {
-    /* background-color: red; */
-    align-self: center;
-    height: 75%;
-    width: 75%;
+.keywordBtn:hover {
+    background-color: #9e6bdd;
+}
+
+#keywordsBtnDiv {
+    /* background-color: #000a12; */
+    width: 60%;
+    /* height: 280px; */
     border-radius: 10px;
-}
-
-#divUserInput {
-    padding: 15px;
-}
-
-#btnSubmit {
-    color: #12e6c8;
-    border-radius: 5px;
-    margin: 0px;
-    margin-top: 20px;
-    align-self: right;
-}
-
-#btnSubmit:hover {
-    color: #0f9e8b;
-}
-
-#btnPageChange {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 12pt;
-    border-radius: 10px;
-    padding: 0;
-    margin: 20px;
-    text-decoration: none;
-    width: 130px;
-}
-
-/* #btnPageChange .btnPageChangeBuilding {
-    align-self: flex-start;
-} */
-
-/* Graphs */
-.divGraphs .main-svg {
-    border-radius: 10px;
+    align-items: center;
+    /* padding: 30px; */
 }
 
 /****************************************************************************
 GRAPHS
 ****************************************************************************/
+/* Graphs */
+.divGraphs .main-svg {
+    border-radius: 10px;
+}

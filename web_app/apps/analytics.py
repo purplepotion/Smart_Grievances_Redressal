@@ -55,8 +55,52 @@ layout = html.Div([
         html.Div([
             html.Div([
                 html.Div([
-                    "Keywords"
-                ],
+                     html.Div([
+                         # Title
+                         html.Div([
+                             html.H3(
+                                 'Keywords',
+                                 id="keywordsTitle",
+                             ),
+                         ], className="row justify-content-center"),
+
+                         # Keywords List
+                         html.Div([
+                             html.Div([
+                                 html.Div([
+                                     html.Button(
+                                         'Keyword',
+                                         id='keywordBtn01',
+                                         className='keywordBtn'
+                                     ),
+                                     html.Button(
+                                         'Keyword',
+                                         id='keywordBtn02',
+                                         className='keywordBtn'
+                                     ),
+                                     html.Button(
+                                         'Keyword',
+                                         id='keywordBtn03',
+                                         className='keywordBtn'
+                                     ),
+                                     html.Button(
+                                         'Keyword',
+                                         id='keywordBtn04',
+                                         className='keywordBtn'
+                                     ),
+                                     html.Button(
+                                         'Keyword',
+                                         id='keywordBtn05',
+                                         className='keywordBtn'
+                                     ),
+                                 ])
+                             ],
+                                 id='keywordsBtnDiv',
+                                 className='container d-flex justify-content-center align-items-center'
+                             )
+                         ], className='row justify-content-center')
+                     ], className='container')
+                     ],
                     className="divDisplay")
             ],
                 className="col-4 container"
