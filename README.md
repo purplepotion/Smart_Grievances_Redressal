@@ -19,6 +19,8 @@
 * [Word embeddings](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/multi-class-text-classification-cnn/data_helper.py) to deal with extra noisy data
 
 ## ScreenShots
+![ScreenShot 1](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(41).png)
+
 ![ScreenShot 1](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(40).png)
 
 ![ScreenShot 2](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(39).png)
