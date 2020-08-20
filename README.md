@@ -11,9 +11,10 @@
 * [Amazon transcribe](https://aws.amazon.com/transcribe/) - To convert speech to text, yet to be integrated with frontend
 * We have also facilitated the use of amazon cloud 9 along with EC2 instance and lambda function generator to facilitate this feature as an independent API, which is able to handle large and live inputs and produce the output
 
-##Unique Features
+## Unique Features
 * Classifies complaints without human intervention according to the department
 * [Text classification](https://github.com/purplepotion/Smart_Grievances_Redressal/tree/master/multi-class-text-classification-cnn) using deep learning approaches such as [CNN and LSTM](https://www.researchgate.net/profile/Basit_Raza2/publication/333706654_A_Hybrid_CNN-LSTM_Model_for_Improving_Accuracy_of_Movie_Reviews_Sentiment_Analysis/links/5d00b1eb299bf13a384ea950/A-Hybrid-CNN-LSTM-Model-for-Improving-Accuracy-of-Movie-Reviews-Sentiment-Analysis.pdf)
+* Modular use of [Twitter API](https://colab.research.google.com/drive/1J1Cb-61b6Vw22Moz0yQktA-RZvwe_9wy) to get the most relevant data
 * Code-mixed laguage could also be used - [Translator](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/web_app/apps/helpers/language_translation.py)
 * [Extensive database](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/web_app/apps/helpers/complaint_data.db)
 * [Word embeddings](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/multi-class-text-classification-cnn/data_helper.py) to deal with extra noisy data
