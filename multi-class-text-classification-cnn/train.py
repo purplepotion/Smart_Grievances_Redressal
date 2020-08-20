@@ -130,7 +130,7 @@ def train_cnn():
 				total_test_correct += num_test_correct
 
 			test_accuracy = float(total_test_correct) / len(y_test)
-			logging.critical('Accuracy on test set is {} based on the best model {}'.format(test_accuracy, path))
+			logging.critical('Accuracy on set is {} based on the best model {}'.format(test_accuracy, path))
 			logging.critical('The training is complete')
 
 if __name__ == '__main__':
