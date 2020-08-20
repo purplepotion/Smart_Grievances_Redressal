@@ -1,0 +1,1 @@
+department_list = ['Garbage (SWM)', 'Drainage', 'Electrical', 'Health Kitak', 'Noise Pollution', 'Tree Authority', 'Road', 'Water Supply', 'Road Project(H.O)', 'Bhavan Rachana Department']
