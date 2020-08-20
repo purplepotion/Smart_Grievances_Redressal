@@ -38,7 +38,7 @@ def top_by_dept(dept_name):
 
 
 
-def top_tweets(dept_name):
+def top_tweets(keyword_name):
 	'''
 		Returns a list of top 10 tweets in the given dept.
 		params:
@@ -48,7 +48,7 @@ def top_tweets(dept_name):
 	c = conn.cursor()
 
 	tweets = []
-	c.execute(f'''SELECT Subcategory FROM complaints WHERE Category LIKE '%{dept_name}%' ORDER BY Date LIMIT 10;''')
+	c.execute(f'''SELECT Subcategory FROM complaints WHERE Subcategory LIKE '%{keyword_name}%' ORDER BY Date LIMIT 10;''')
 	text = c.fetchall()
 	for t in text:
 		tweets.append(t)
