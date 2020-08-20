@@ -15,7 +15,7 @@
 * [Text classification](https://github.com/purplepotion/Smart_Grievances_Redressal/tree/master/multi-class-text-classification-cnn) using deep learning approaches such as [CNN and LSTM](https://www.researchgate.net/profile/Basit_Raza2/publication/333706654_A_Hybrid_CNN-LSTM_Model_for_Improving_Accuracy_of_Movie_Reviews_Sentiment_Analysis/links/5d00b1eb299bf13a384ea950/A-Hybrid-CNN-LSTM-Model-for-Improving-Accuracy-of-Movie-Reviews-Sentiment-Analysis.pdf)
 * Code-mixed laguage could also be used - [Translator](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/web_app/apps/helpers/language_translation.py)
 * [Extensive database](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/web_app/apps/helpers/complaint_data.db)
-* [Word embeddings] (https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/multi-class-text-classification-cnn/data_helper.py) to deal with extra noisy data
+* [Word embeddings](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/multi-class-text-classification-cnn/data_helper.py) to deal with extra noisy data
 ## Requirements
 We suggest you to create a separate virtual environment running Python 3 for this app, and install all of the required dependencies there. Run in Terminal/Command Prompt:
 
