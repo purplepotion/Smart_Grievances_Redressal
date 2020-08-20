@@ -1,0 +1,6 @@
+model_checkpoint_path: "C:\\Users\\LENOVO\\Documents\\GitHub\\Smart_Grievances_Redressal\\multi-class-text-classification-cnn\\trained_model_1597886565\\checkpoints\\model-1800"
+all_model_checkpoint_paths: "C:\\Users\\LENOVO\\Documents\\GitHub\\Smart_Grievances_Redressal\\multi-class-text-classification-cnn\\trained_model_1597886565\\checkpoints\\model-800"
+all_model_checkpoint_paths: "C:\\Users\\LENOVO\\Documents\\GitHub\\Smart_Grievances_Redressal\\multi-class-text-classification-cnn\\trained_model_1597886565\\checkpoints\\model-1200"
+all_model_checkpoint_paths: "C:\\Users\\LENOVO\\Documents\\GitHub\\Smart_Grievances_Redressal\\multi-class-text-classification-cnn\\trained_model_1597886565\\checkpoints\\model-1400"
+all_model_checkpoint_paths: "C:\\Users\\LENOVO\\Documents\\GitHub\\Smart_Grievances_Redressal\\multi-class-text-classification-cnn\\trained_model_1597886565\\checkpoints\\model-1600"
+all_model_checkpoint_paths: "C:\\Users\\LENOVO\\Documents\\GitHub\\Smart_Grievances_Redressal\\multi-class-text-classification-cnn\\trained_model_1597886565\\checkpoints\\model-1800"

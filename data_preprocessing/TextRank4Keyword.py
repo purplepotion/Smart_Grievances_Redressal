@@ -4,9 +4,9 @@ import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 import os
 
-
-nlp = spacy.load(os.path.join(os.getcwd(),"env\Lib\site-packages\en_core_web_sm\en_core_web_sm-2.3.1"))
-
+current_directory = os.path.dirname(os.getcwd())
+nlp = spacy.load(os.path.join(current_directory,"env\Lib\site-packages\en_core_web_sm\en_core_web_sm-2.3.1"))
+# nlp = spacy.load('en_core_web_sm')
 
 class TextRank4Keyword():
     """Extract keywords from text"""

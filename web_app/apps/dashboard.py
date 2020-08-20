@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output, State
 import plotly.express as px
 import pandas as pd
 
-from web_app.app import app
+from app import app
 
 layout = html.Div([
     html.Div([
@@ -58,7 +58,7 @@ layout = html.Div([
                             html.Div([
                                 html.H4(
                                     'Department',
-                                    id='precdictionDeptText'
+                                    id='predictionDeptText'
                                 )
                             ],
                                 id='predictionDept',
@@ -141,14 +141,16 @@ layout = html.Div([
     ], className="container justify-content-center")
 ])
 
-# @ app.callback(
-#     [Output('nutrients_graph', 'figure'), ],
-#     [Input('dateDropdown', 'value')],
-# )
-# def update_nutrients_graph(value):
-#     if not value:
-#         value = dates[0]
-#     return nutrients_graph(value),
+
+@ app.callback(
+    [Output('predictionDeptText', 'children'), ],
+    [Input('btnSubmitComplaint', 'n_clicks')],
+    [State('complaintText', 'value')],
+)
+def update_nutrients_graph(n_clicks, value):
+    print("Button Clicked")
+    print(value)
+    return "D",
 
 
 # @ app.callback(

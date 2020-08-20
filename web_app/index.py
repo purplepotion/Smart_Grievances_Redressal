@@ -5,8 +5,8 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from add_paths import ankit
-from web_app.app import app
-from web_app.apps import dashboard, analytics
+from app import app
+from apps import dashboard, analytics
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False, pathname='/apps/dashboard'),
