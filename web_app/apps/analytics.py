@@ -3,7 +3,7 @@ import dash_html_components as html
 import plotly.express as px
 import pandas as pd
 
-from web_app.app import app
+from app import app
 
 DEPARTMENTS = ["Water", "Air", "Fire", "Earth", "Space"]
 dropdownOptions = [{'label': dept, 'value': dept} for dept in DEPARTMENTS]

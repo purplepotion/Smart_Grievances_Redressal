@@ -63,10 +63,10 @@ total_data = train
 def preprocess():
     removePattern()
     removeShortWords()
-    # tokenized_tweet = tokenize()
-    # tokenized_tweet = stemWords(tokenized_tweet)
-    # joinTokens(tokenized_tweet)
-    # total_data['tidy_tweet'] = tokenized_tweet
+    tokenized_tweet = tokenize()
+    tokenized_tweet = stemWords(tokenized_tweet)
+    joinTokens(tokenized_tweet)
+    total_data['tidy_tweet'] = tokenized_tweet
     print("\n\nPreprocessing done\n\n")
     
 
@@ -100,6 +100,7 @@ def removePattern():
 def removeShortWords():
     print('\n\nRemoving Short Words\n\n')
     total_data['tidy_tweet'] = total_data['tidy_tweet'].apply(lambda x: ' '.join([w for w in x.split() if len(w)>3]))
+    total_data['basic_clean_tweet']=total_data['tidy_tweet']
     total_data.head()
 
 # separating each word as a token

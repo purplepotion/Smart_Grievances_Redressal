@@ -1,0 +1,2 @@
+[MASTER]
+init-hook='import sys; sys.path.append("C:\Users\LENOVO\Documents\GitHub\Smart_Grievances_Redressal\multi-class-text-classification-cnn")'
