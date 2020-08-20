@@ -7,7 +7,8 @@ import data_helper
 import numpy as np
 import tensorflow as tf
 from text_cnn import TextCNN
-from tensorflow.contrib import learn
+from tensorflow_estimator import estimator
+#from tensorflow.contrib import learn
 from sklearn.model_selection import train_test_split
 
 logging.getLogger().setLevel(logging.INFO)
@@ -23,7 +24,7 @@ def train_cnn():
 	"""Step 1: pad each sentence to the same length and map each word to an id"""
 	max_document_length = max([len(x.split(' ')) for x in x_raw])
 	logging.info('The maximum length of all sentences: {}'.format(max_document_length))
-	vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
+	vocab_processor = estimator.classifier_parse_example_spec.VocabularyProcessor(max_document_length)
 	x = np.array(list(vocab_processor.fit_transform(x_raw)))
 	y = np.array(y_raw)
 
