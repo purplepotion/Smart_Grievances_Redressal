@@ -68,3 +68,5 @@ Key words are displayed according to the department and the frequency graph of t
 * [Smart complaints dispatching](https://arxiv.org/pdf/1912.10546v1.pdf)
 
 ![ScreenShot 1](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(40).png)
+
+![ScreenShot 2](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(39).png)
