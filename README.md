@@ -66,3 +66,5 @@ Open http://0.0.0.0:8050/ in your browser, you will see a live-updating dashboar
 Key words are displayed according to the department and the frequency graph of the complaints are dispalyed in the analytics dashboard
 ## Resources and references
 * [Smart complaints dispatching](https://arxiv.org/pdf/1912.10546v1.pdf)
+
+![ScreenShot 1](https://github.com/purplepotion/Smart_Grievances_Redressal/blob/master/Screenshot%20(40).png)
