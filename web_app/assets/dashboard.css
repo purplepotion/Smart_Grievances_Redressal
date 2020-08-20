@@ -21,11 +21,12 @@ DASHBOARD
 .divDisplay {
     margin: 20px;
     background-color: #263238;
-    color: aliceblue;
-    height: 400px;
+    color: #ffffff;
+    height: 480px;
     border-radius: 10px;
-    border: 1px;
-    border-color: #ffffff;
+    /* border: 1px; */
+    /* border-color: #ffffff; */
+    border: solid #707070 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,11 +166,10 @@ ANALYTICS
     align-self: flex-start;
 } */
 
+/****************************************************************************
+GRAPHS
+****************************************************************************/
 /* Graphs */
 .divGraphs .main-svg {
     border-radius: 10px;
 }
-
-/****************************************************************************
-GRAPHS
-****************************************************************************/
