@@ -1,5 +1,5 @@
 import sqlite3
-from datadict import keyword_dict
+from apps.helpers.datadict import keyword_dict
 
 # conn = sqlite3.connect('complaint_data.db')
 # c = conn.cursor()
@@ -14,7 +14,7 @@ def top_by_dept(dept_name):
 	params:
 	dept_name : string
 	'''
-	conn = sqlite3.connect('complaint_data.db')
+	conn = sqlite3.connect(r'F:\vedant_data\Smart_Grievances_Redressal\web_app\apps\helpers\complaint_data.db') #change path here
 	c = conn.cursor()
 	counts = []
 	keyword = []
@@ -44,7 +44,7 @@ def top_tweets(keyword_name):
 		params:
 		dept_name : string
 	'''
-	conn = sqlite3.connect('complaint_data.db')
+	conn = sqlite3.connect(r'F:\vedant_data\Smart_Grievances_Redressal\web_app\apps\helpers\complaint_data.db') #change path here
 	c = conn.cursor()
 
 	tweets = []
