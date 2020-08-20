@@ -6,7 +6,8 @@ import data_helper
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from tensorflow.contrib import learn
+#from tensorflow.contrib import learn
+import tflearn
 
 logging.getLogger().setLevel(logging.INFO)
 
@@ -40,7 +41,7 @@ def predict_unseen_data():
 		logging.info('The number of y_test: {}'.format(len(y_test)))
 
 	vocab_path = os.path.join(checkpoint_dir, "vocab.pickle")
-	vocab_processor = learn.preprocessing.VocabularyProcessor.restore(vocab_path)
+	vocab_processor =  tflearn.data_utils.VocabularyProcessor.restore(vocab_path)
 	x_test = np.array(list(vocab_processor.transform(x_test)))
 
 	"""Step 2: compute the predictions"""
