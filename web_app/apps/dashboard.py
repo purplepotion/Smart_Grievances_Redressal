@@ -19,7 +19,24 @@ layout = html.Div([
         html.Div([
             html.Div([
                 html.Div([
-                    "TextBox"
+                    html.Div([
+
+                        html.Div([
+                            dcc.Textarea(
+                                id="complaintText",
+                                # value="This is some random complaint",
+                                placeholder="Write your complaint here..."
+                            ),
+                        ], className='row'),
+                        html.Div([
+                            html.Button([
+                                "Submit",
+                            ],
+                                id='btnSubmitComplaint',
+                            ),
+                        ], className='row justify-content-end')
+                    ], className="container divInput"),
+
                 ],
                     className="divDisplay")
             ],
@@ -27,7 +44,28 @@ layout = html.Div([
             ),
             html.Div([
                 html.Div([
-                    "Department"
+                    html.Div([
+                        # Title
+                        html.Div([
+                            html.H3(
+                                'Predicted Department',
+                                id="predictionTitle",
+                            ),
+                        ], className="row justify-content-center"),
+
+                        # Prediction Box
+                        html.Div([
+                            html.Div([
+                                html.H4(
+                                    'Department',
+                                    id='precdictionDeptText'
+                                )
+                            ],
+                                id='predictionDept',
+                                className='d-flex justify-content-center align-items-center'
+                            )
+                        ], className='row justify-content-center')
+                    ], className='container justify-content-center'),
                 ],
                     className="divDisplay")
             ],
@@ -38,7 +76,46 @@ layout = html.Div([
         html.Div([
             html.Div([
                 html.Div([
-                    "Keywords found in the given complaint"
+                    html.Div([
+                        # Title
+                        html.Div([
+                            html.H3(
+                                'Keywords',
+                                id="keywordsTitle",
+                            ),
+                        ], className="row justify-content-center"),
+
+                        # Keywords List
+                        html.Div([
+                            html.Div([
+                                html.Div([
+                                    html.H4(
+                                        'Keyword',
+                                        className='keywordText'
+                                    ),
+                                    html.H4(
+                                        'Keyword',
+                                        className='keywordText'
+                                    ),
+                                    html.H4(
+                                        'Keyword',
+                                        className='keywordText'
+                                    ),
+                                    html.H4(
+                                        'Keyword',
+                                        className='keywordText'
+                                    ),
+                                    html.H4(
+                                        'Keyword',
+                                        className='keywordText'
+                                    )
+                                ])
+                            ],
+                                id='keywordsDiv',
+                                className='container d-flex justify-content-center align-items-center'
+                            )
+                        ], className='row justify-content-center')
+                    ], className='container')
                 ],
                     className="divDisplay")
             ],
